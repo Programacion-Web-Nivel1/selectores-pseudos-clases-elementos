@@ -1,0 +1,88 @@
+div {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+/* Pseduo-Clase :visited (Links a los que los usuarios ingresaron )*/
+#visitado a:visited {
+    color: red;
+}
+
+/* Pseduo-Clase :link (Links a los que los usuarios NOOOO ingresaron )*/
+#no_visitado a:link {
+    color: red;
+}
+
+/* Pseduo-Clase :active (SOLAMENTE CUANDO PRESIONO CLICK SOBRE EL LINK!!! )*/
+#active a:active {
+    background: purple;
+}
+
+/* Pseduo-Clase :hover (SOLAMENTE CUANDO poso el mouse sobre el elemento )*/
+#hover p:hover {
+    background: lightgreen;
+}
+
+/* Pseduo-Clase :focus (Aplica la regla solamente cuando se hace foco en el elemento)*/
+#enfoco input:focus {
+    border: 3px solid lightgreen;
+}
+
+/* Pseudo-Clase :nth-child(n) (Aplica una regla CSS al hijo enesimo)*/
+#enesimo li:nth-child(4) {
+    color: red;
+}
+
+#enesimo li:nth-child(odd) {
+    color: purple
+}
+
+#enesimo li:nth-child(3n) {
+    background-color: lightseagreen;
+}
+
+#enesimo li:nth-child(3n-1) {
+    background-color: lightsalmon;
+}
+
+#enesimo li:nth-child(-n+3) {
+    text-decoration: 1px black underline;
+}
+
+#enesimo li:nth-last-child(2) {
+    text-decoration: 1px black underline;
+}
+
+/* Pseudo-Clase :only-child (Aplica una regla CSS al hijo que es unico)*/
+#unico :only-child {
+    color: red;
+}
+
+/* Pseudo-Clase :only-of-type (Aplica una regla CSS al hijo que es unico pero considerando el tipo [etiqueta])*/
+#tipo :only-of-type {
+    color: red;
+}
+
+/* Pseudo-Clase :empty (Aplica una regla CSS el elemento que este COMPLETAMENTE VACIO)*/
+#vacio div {
+    height: 50px;
+    background-color: lightslategrey;
+}
+
+#vacio div:empty {
+    background-color: lightsteelblue;
+}
+
+/* Pseudo-Clases :disabled :enabled :required (Aplica una regla CSS al elemento html que esta deshabilitado, habilitado o obligatorio)*/
+#formulario input:disabled {
+    border: 3px solid red;
+}
+
+#formulario input:enabled {
+    border: 3px solid lightskyblue;
+}
+
+#formulario input:required {
+    border: 3px solid lightsalmon;
+}
+

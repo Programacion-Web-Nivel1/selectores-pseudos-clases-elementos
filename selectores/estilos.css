@@ -1,0 +1,40 @@
+div {
+    border: 1px solid black;
+}
+
+.rojo {
+    color: red;
+}
+
+.verde {
+    color: green;
+}
+
+.azul {
+    color: blue;
+}
+
+/* Selector de hijo */
+div > p {
+    color: blue;
+}
+
+/* Selector adyacente */
+#adyacente h1 + h2 {
+    color: red;
+}
+
+/* Selector general de hermanos */
+#hermanos h1 ~ h2 {
+    color: violet;
+}
+
+/* Selector de negacion */
+#negacion p:not(.verde) {
+    background-color: burlywood;
+}
+
+/* Selector de atributo */
+#atributos p[class] {
+    background-color: lightcyan;
+} 

@@ -1,0 +1,29 @@
+/* Pseudo-Elemento ::first-line (Aplica una regla CSS a la primer linea de un texto) */
+#primera p::first-line {
+    color: lightsalmon;
+}
+
+/* Pseudo-Elemento ::first-letter (Aplica una regla CSS a la primera letra de un texto) */
+#letra p::first-letter {
+    font-size: 50px;
+}
+
+/* Pseudo-Elemento ::before (Incorpora texto previo al contenido de un elemento y le aplica un estilo) */
+#modificador p::before {
+    content: 'Noticia!!';
+    color: red;
+    background: yellow;
+}
+
+/* Pseudo-Elemento ::after (Incorpora texto despues del contenido de un elemento y le aplica un estilo) */
+#modificador p::after {
+    content: 'chau!!';
+    color: red;
+    background: yellow;
+}
+
+/* Pseudo-Elemento ::selection (Aplica un regla CSS a la seleccion de texto realizada por el usuario) */
+#seleccion p::selection {
+    color: red;
+    background: yellow;
+}
